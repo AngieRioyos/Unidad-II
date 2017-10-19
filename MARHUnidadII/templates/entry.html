@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block body %}
+    <h2>{{ the_title }}</h2>
+    <form method="post" action="/exec_trabajo"> 
+        <table>
+            <p>Use this form to submit a data
+                to execute the equation: </p>
+            <tr>
+                <td>f:</td>
+                <td><input type="number" name="f" /></td>
+            </tr>
+            <tr>
+                <td>d:</td>
+                <td><input type="number" name="d"  /></td>
+            </tr>
+          </table>
+              <p>When you're ready, click this button.</p>
+              <p><input type="submit" name="btn_calc"
+                        value="Calculate the equation" /></p>
+    </form>
+{% endblock%}
